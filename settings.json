@@ -1,0 +1,252 @@
+{
+    // HOT
+    "editor.largeFileOptimizations": true,
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.showSlider": "always",
+    "editor.minimap.maxColumn": 80,
+    // "editor.codeLens": true,
+    // "editor.tabSize": 2,
+    // "window.titleBarStyle": "custom",
+    // EDITOR
+    // "breadcrumbs.enabled": true,
+    // "breadcrumbs.filePath": "on",
+    // "breadcrumbs.symbolPath": "on",
+    "editor.cursorBlinking": "blink",
+    "editor.cursorStyle": "block",
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
+    // "editor.fontFamily": "-ubuntu mono, -bitstream vera sans mono, '-ibm 3270 narrow', '-gohufont', -fira mono for powerline, -inconsolata-dz for powerline, -source code pro, menlo, -roboto mono, monaco, 'consolas', mononoki",
+    "editor.fontFamily": "menlo",
+    // "editor.fontLigatures": true,
+    "editor.fontSize": 15,
+    // "editor.fontWeight": "500",
+    // "editor.formatOnSave": true,
+    // "editor.formatOnType": true,
+    // "editor.glyphMargin": false,
+    // "editor.letterSpacing": -0.3,
+    "editor.lineHeight": 22,
+    // "editor.lineNumbers": "relative",
+    // "editor.minimap.side": "left",
+    // "editor.overviewRulerBorder": false,
+    "editor.quickSuggestions": {
+        // "other": true,
+        "comments": false,
+        // "strings": false,
+    },
+    "editor.renderLineHighlight": "gutter",
+    "editor.rulers": [80],
+    "editor.smoothScrolling": false,
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 80,
+    "editor.wrappingIndent": "same",
+    "editor.tokenColorCustomizations": {
+        "[Default Dark+]": {
+            // "variables": "#d4d4d4",
+            "textMateRules": [
+                {
+                    "scope":"entity.name.function",
+                    "settings": {
+                        "foreground": "#569cd6",
+                        // "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope":"keyword.operator",
+                    "settings": {
+                        "foreground": "#ff71a9",
+                        // "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope":"keyword.control",
+                    "settings": {
+                        // "foreground": "#ff71a9",
+                        // "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope": "support.function",
+                    "settings": {
+                        "foreground": "#ffe5b2",
+                        // "foreground": "#ffe9a8",
+                        // "fontStyle": "bold"
+                    }
+                },
+            ]
+        },
+        "[1mm - Dark+]": {
+            // "variables": "#bababa",
+            // "variables": "#d4d4d4",
+            "textMateRules": [
+                {
+                    "scope": "keyword.operator",
+                    "settings": {
+                        "foreground": "#ff71a9",
+                        // "forground": "#f286c4",
+                        // "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope": "keyword.control",
+                    "settings": {
+                        "foreground": "#ff71a9",
+                        // "foreground": "#f286c4",
+                        // "fontStyle": "bold",
+                    }
+                },
+                {
+                    "scope":"keyword.operator.new",
+                    "settings": {
+                        "foreground": "#ff71a9",
+                        // "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope": "support.function",
+                    "settings": {
+                        "foreground": "#ffe5b2",
+                        // "foreground": "#ffe9a8",
+                        // "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope": "entity.name.function",
+                    "settings": {
+                        // function call
+                        // "foreground": "#ffe9a8",
+                        // "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope": "entity",
+                    "settings": {
+                        // class name
+                        // "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope": "storage.type",
+                    "settings": {
+                        // data type
+                        // "foreground": "#cf68e1",
+                        // "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope": "variable",
+                    "settings": {
+                        // "foreground": "#FF0000",
+                        // "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope": "meta.class",
+                    "settings": {
+                        // "foreground": "#bababa",
+                        // "fontStyle": "bold"
+                    }
+                }
+            ]
+        },
+    },
+    // WINDOW
+    "window.menuBarVisibility": "toggle",
+    "window.newWindowDimensions": "inherit",
+    "window.zoomLevel": 2,
+    // WORKBENCH
+    "workbench.activityBar.visible": false,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#2d2d2d",
+        "statusBar.foreground": "#e7e7e7"
+    },
+    "workbench.editor.tabSizing": "fit",
+    "workbench.editor.showIcons": true,
+    "workbench.editor.showTabs": true,
+    "workbench.settings.openDefaultSettings": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.statusBar.feedback.visible": false,
+    // ADD-ON
+    // "C_Cpp.intelliSenseEngineFallback": "Enabled",
+    // "C_Cpp.errorSquiggles": "Enabled",
+    "bracketPairColorizer.showHorizontalScopeLine": false,
+    "bracketPairColorizer.consecutivePairColors": [
+        ["(", ")"],
+        ["[", "]"],
+        ["{", "}"],
+        [
+            "#bababa", //gray
+            "#ff71a9", //pink
+            "#9cdcfe", //sky
+        ],
+        "Red"
+    ],
+    "[cpp]": {
+        "editor.quickSuggestions": true,
+    },
+
+    "C_Cpp.default.systemIncludePath": [
+        "/usr/include/c++/7",
+        "/usr/include/x86_64-linux-gnu/c++/7",
+        "/usr/include/c++/7/backward",
+        "/usr/lib/gcc/x86_64-linux-gnu/7/include",
+        "/usr/local/include",
+        "/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed",
+        "/usr/include/x86_64-linux-gnu",
+        "/usr/include",
+        "${workspaceFolder}"
+    ],
+    "C_Cpp.default.browse.path": [
+        "/usr/include/c++/7",
+        "/usr/include/x86_64-linux-gnu/c++/7",
+        "/usr/include/c++/7/backward",
+        "/usr/lib/gcc/x86_64-linux-gnu/7/include",
+        "/usr/local/include",
+        "/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed",
+        "/usr/include/x86_64-linux-gnu",
+        "/usr/include",
+        "${workspaceFolder}"
+    ],
+    "csharp.suppressDotnetInstallWarning": true,
+    "java.errors.incompleteClasspath.severity": "ignore",
+    // "java.home": "C:\\Program Files (x86)\\Java\\jdk1.8.0_152\\bin\\java.exe",
+    // "java.home": "/usr/lib/jvm/java-8-openjdk-amd64",
+    "[javascript]": {
+        "editor.tabSize": 2,
+    },
+    "[html]": {
+        "editor.tabSize": 2,
+    },
+    "[css]": {
+        "editor.tabSize": 2,
+    },
+    "[java]": {
+        "editor.tabSize": 4,
+    },
+    "[xml]": {
+        "editor.tabSize": 2,
+    },
+    "python.pythonPath": "python3",
+    "python.linting.pylintArgs": [
+        "--errors-only",
+    ],
+    // "python.formatting.provider": "autopep8",
+    // TERMINAL
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "block",
+    "terminal.integrated.fontFamily": "meslo lg s for powerline",
+    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.lineHeight": 0,
+    // FILE
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    // 
+    "git.ignoreMissingGitWarning": true,
+    "git.autofetch": true,
+    "workbench.iconTheme": "eq-material-theme-icons-light",
+    "extensions.ignoreRecommendations": false,
+    "materialTheme.autoApplyIcons": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "workbench.settings.editor": "json",
+    // "r.rterm.windows": "C:\\Program Files\\R\\R-3.4.3\\bin\\x64\\R.exe",
+}
