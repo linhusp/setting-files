@@ -41,12 +41,13 @@
     "editor.wrappingIndent": "same",
     "editor.tokenColorCustomizations": {
         "[Default Dark+]": {
-            // "variables": "#d4d4d4",
+            "keywords": "#c586c0",
             "textMateRules": [
                 {
                     "scope":"entity.name.function",
                     "settings": {
                         "foreground": "#569cd6",
+                        // "foreground": "#93cbee",
                         // "fontStyle": "bold"
                     }
                 },
@@ -77,11 +78,12 @@
         "[1mm - Dark+]": {
             // "variables": "#bababa",
             // "variables": "#d4d4d4",
+            // "keywords": "#FF0000",
             "textMateRules": [
                 {
                     "scope": "keyword.operator",
                     "settings": {
-                        "foreground": "#ff71a9",
+                        // "foreground": "#ff71a9",
                         // "forground": "#f286c4",
                         // "fontStyle": "bold"
                     }
@@ -89,8 +91,8 @@
                 {
                     "scope": "keyword.control",
                     "settings": {
-                        "foreground": "#ff71a9",
-                        // "foreground": "#f286c4",
+                        // "foreground": "#ff71a9",
+                        "foreground": "#f48fb1",
                         // "fontStyle": "bold",
                     }
                 },
@@ -248,5 +250,6 @@
     "liveServer.settings.donotShowInfoMsg": true,
     "liveServer.settings.donotVerifyTags": true,
     "workbench.settings.editor": "json",
+    "workbench.colorTheme": "1mm - Dark+",
     // "r.rterm.windows": "C:\\Program Files\\R\\R-3.4.3\\bin\\x64\\R.exe",
 }
