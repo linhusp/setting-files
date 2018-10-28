@@ -16,10 +16,10 @@
     "editor.detectIndentation": false,
     "editor.insertSpaces": true,
     // "editor.fontFamily": "-ubuntu mono, -bitstream vera sans mono, '-ibm 3270 narrow', '-gohufont', -fira mono for powerline, -inconsolata-dz for powerline, -source code pro, menlo, -roboto mono, monaco, 'consolas', mononoki",
-    "editor.fontFamily": "menlo",
+    "editor.fontFamily": "-fantasquesansmono nerd font, -monaco, -lemon, -consolas, -input mono narrow, -input mono, -monaco, meslo lg m",
     // "editor.fontLigatures": true,
-    "editor.fontSize": 15,
-    // "editor.fontWeight": "500",
+    "editor.fontSize": 14.5,
+    // "editor.fontWeight": "300",
     // "editor.formatOnSave": true,
     // "editor.formatOnType": true,
     // "editor.glyphMargin": false,
@@ -36,10 +36,31 @@
     "editor.renderLineHighlight": "gutter",
     "editor.rulers": [80],
     "editor.smoothScrolling": false,
+    "editor.tabCompletion": "on",
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 80,
     "editor.wrappingIndent": "same",
     "editor.tokenColorCustomizations": {
+        "[Firefox Dark]": {
+            "strings": "#ce9178",
+        },
+        "[Dracula - WebStorm Edition]": {
+            "keywords": {
+                "fontStyle": ""
+            },
+        },
+        "[One Monokai 80s]": {
+            "strings": "#ce9178",
+            "textMateRules": [
+                {
+                    "scope":"keyword.operator",
+                    "settings": {
+                        "foreground": "#ff71a9",
+                        // "fontStyle": "bold"
+                    }
+                }
+            ]
+        },
         "[Default Dark+]": {
             "keywords": "#c586c0",
             "textMateRules": [
@@ -47,14 +68,13 @@
                     "scope":"entity.name.function",
                     "settings": {
                         "foreground": "#569cd6",
-                        // "foreground": "#93cbee",
-                        // "fontStyle": "bold"
                     }
                 },
                 {
                     "scope":"keyword.operator",
                     "settings": {
-                        "foreground": "#ff71a9",
+                        // "foreground": "#ff71a9",
+                        "foreground": "#f48fb1"
                         // "fontStyle": "bold"
                     }
                 },
@@ -62,15 +82,17 @@
                     "scope":"keyword.control",
                     "settings": {
                         // "foreground": "#ff71a9",
+                        // "foreground": "#f48fb1"
                         // "fontStyle": "bold"
                     }
                 },
                 {
                     "scope": "support.function",
                     "settings": {
-                        "foreground": "#ffe5b2",
-                        // "foreground": "#ffe9a8",
-                        // "fontStyle": "bold"
+                        // "foreground": "#eed6a6",
+                        // "foreground": "#ffecb3",
+                        "foreground": "#569cd6",
+                        "fontStyle": "italic"
                     }
                 },
             ]
@@ -151,6 +173,8 @@
             ]
         },
     },
+    // FILE
+    "files.enableTrash": false,
     // WINDOW
     "window.menuBarVisibility": "toggle",
     "window.newWindowDimensions": "inherit",
@@ -159,7 +183,8 @@
     "workbench.activityBar.visible": false,
     "workbench.colorCustomizations": {
         "statusBar.background": "#2d2d2d",
-        "statusBar.foreground": "#e7e7e7"
+        "statusBar.noFolderBackground": "#2d2d2d",
+        "statusBar.debuggingBackground": "#2d2d2d"
     },
     "workbench.editor.tabSizing": "fit",
     "workbench.editor.showIcons": true,
@@ -228,14 +253,14 @@
         "editor.tabSize": 2,
     },
     "python.pythonPath": "python3",
-    "python.linting.pylintArgs": [
-        "--errors-only",
-    ],
+    // "python.linting.pylintArgs": [
+    //     "--errors-only",
+    // ],
     // "python.formatting.provider": "autopep8",
     // TERMINAL
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cursorStyle": "block",
-    "terminal.integrated.fontFamily": "meslo lg s for powerline",
+    "terminal.integrated.fontFamily": "-consolas, meslo lg s for powerline",
     "terminal.integrated.fontSize": 12,
     "terminal.integrated.lineHeight": 0,
     // FILE
@@ -250,6 +275,12 @@
     "liveServer.settings.donotShowInfoMsg": true,
     "liveServer.settings.donotVerifyTags": true,
     "workbench.settings.editor": "json",
-    "workbench.colorTheme": "1mm - Dark+",
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors.normal": "#2d2d2d",
+    "vim.statusBarColors.insert": "#BF616A",
+    "vim.statusBarColors.visual": "#B48EAD",
+    "vim.statusBarColors.visualline": "#B48EAD",
+    "vim.statusBarColors.visualblock": "#A3BE8C",
+    "vim.statusBarColors.replace": "#D08770",
     // "r.rterm.windows": "C:\\Program Files\\R\\R-3.4.3\\bin\\x64\\R.exe",
 }
