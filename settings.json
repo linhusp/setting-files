@@ -62,12 +62,30 @@
             ]
         },
         "[Default Dark+]": {
-            "keywords": "#c586c0",
+            "keywords": "#569cd6",
             "textMateRules": [
+                // {
+                //     "scope":"meta.function-call",
+                //     "settings": {
+                //         "foreground": "#c586c0",
+                //     }
+                // },
+                {
+                    "scope":"punctuation.separator",
+                    "settings": {
+                        "foreground": "#d4d4d4",
+                    }
+                },
+                {
+                    "scope":"support",
+                    "settings": {
+                        "foreground": "#ff0000",
+                    }  
+                },
                 {
                     "scope":"entity.name.function",
                     "settings": {
-                        "foreground": "#569cd6",
+                        "foreground": "#c586c0",
                     }
                 },
                 {
@@ -89,10 +107,11 @@
                 {
                     "scope": "support.function",
                     "settings": {
+                        "foreground": "#ff71a9",
                         // "foreground": "#eed6a6",
                         // "foreground": "#ffecb3",
-                        "foreground": "#569cd6",
-                        "fontStyle": "italic"
+                        // "foreground": "#569cd6",
+                        // "fontStyle": "italic"
                     }
                 },
             ]
