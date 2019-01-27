@@ -4,206 +4,43 @@
     "editor.minimap.renderCharacters": false,
     "editor.minimap.showSlider": "always",
     "editor.minimap.maxColumn": 80,
-    // "editor.codeLens": true,
-    // "editor.tabSize": 2,
-    // "window.titleBarStyle": "custom",
+    "window.titleBarStyle": "native",
     // EDITOR
-    // "breadcrumbs.enabled": true,
-    // "breadcrumbs.filePath": "on",
-    // "breadcrumbs.symbolPath": "on",
     "editor.cursorBlinking": "blink",
-    "editor.cursorStyle": "block",
+    "editor.cursorStyle": "line",
     "editor.detectIndentation": false,
     "editor.insertSpaces": true,
-    // "editor.fontFamily": "-ubuntu mono, -bitstream vera sans mono, '-ibm 3270 narrow', '-gohufont', -fira mono for powerline, -inconsolata-dz for powerline, -source code pro, menlo, -roboto mono, monaco, 'consolas', mononoki",
-    "editor.fontFamily": "-fantasquesansmono nerd font, -monaco, -lemon, -consolas, -input mono narrow, -input mono, -monaco, meslo lg m",
+    "editor.fontFamily": "iosevka ss04, -consolas, -fira code, -roboto mono, -input mono, -monaco, menlo, meslo lg m",
     // "editor.fontLigatures": true,
-    "editor.fontSize": 14.5,
-    // "editor.fontWeight": "300",
-    // "editor.formatOnSave": true,
-    // "editor.formatOnType": true,
+    // "editor.fontSize": 15,
+    "editor.fontSize": 16,
+    // "editor.fontWeight": "500",
     // "editor.glyphMargin": false,
-    // "editor.letterSpacing": -0.3,
+    // "editor.letterSpacing": -0.1,
+    "editor.letterSpacing": 0.5,
     "editor.lineHeight": 22,
     // "editor.lineNumbers": "relative",
-    // "editor.minimap.side": "left",
-    // "editor.overviewRulerBorder": false,
     "editor.quickSuggestions": {
-        // "other": true,
         "comments": false,
-        // "strings": false,
     },
     "editor.renderLineHighlight": "gutter",
     "editor.rulers": [80],
     "editor.smoothScrolling": false,
-    "editor.tabCompletion": "on",
+    // "editor.tabCompletion": "on",
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 80,
     "editor.wrappingIndent": "same",
-    "editor.tokenColorCustomizations": {
-        "[Firefox Dark]": {
-            "strings": "#ce9178",
-        },
-        "[Dracula - WebStorm Edition]": {
-            "keywords": {
-                "fontStyle": ""
-            },
-        },
-        "[One Monokai 80s]": {
-            "strings": "#ce9178",
-            "textMateRules": [
-                {
-                    "scope":"keyword.operator",
-                    "settings": {
-                        "foreground": "#ff71a9",
-                        // "fontStyle": "bold"
-                    }
-                }
-            ]
-        },
-        "[Default Dark+]": {
-            "keywords": "#569cd6",
-            "textMateRules": [
-                // {
-                //     "scope":"meta.function-call",
-                //     "settings": {
-                //         "foreground": "#c586c0",
-                //     }
-                // },
-                {
-                    "scope":"punctuation.separator",
-                    "settings": {
-                        "foreground": "#d4d4d4",
-                    }
-                },
-                {
-                    "scope":"support",
-                    "settings": {
-                        "foreground": "#ff0000",
-                    }  
-                },
-                {
-                    "scope":"entity.name.function",
-                    "settings": {
-                        "foreground": "#c586c0",
-                    }
-                },
-                {
-                    "scope":"keyword.operator",
-                    "settings": {
-                        // "foreground": "#ff71a9",
-                        "foreground": "#f48fb1"
-                        // "fontStyle": "bold"
-                    }
-                },
-                {
-                    "scope":"keyword.control",
-                    "settings": {
-                        // "foreground": "#ff71a9",
-                        // "foreground": "#f48fb1"
-                        // "fontStyle": "bold"
-                    }
-                },
-                {
-                    "scope": "support.function",
-                    "settings": {
-                        "foreground": "#ff71a9",
-                        // "foreground": "#eed6a6",
-                        // "foreground": "#ffecb3",
-                        // "foreground": "#569cd6",
-                        // "fontStyle": "italic"
-                    }
-                },
-            ]
-        },
-        "[1mm - Dark+]": {
-            // "variables": "#bababa",
-            // "variables": "#d4d4d4",
-            // "keywords": "#FF0000",
-            "textMateRules": [
-                {
-                    "scope": "keyword.operator",
-                    "settings": {
-                        // "foreground": "#ff71a9",
-                        // "forground": "#f286c4",
-                        // "fontStyle": "bold"
-                    }
-                },
-                {
-                    "scope": "keyword.control",
-                    "settings": {
-                        // "foreground": "#ff71a9",
-                        "foreground": "#f48fb1",
-                        // "fontStyle": "bold",
-                    }
-                },
-                {
-                    "scope":"keyword.operator.new",
-                    "settings": {
-                        "foreground": "#ff71a9",
-                        // "fontStyle": "bold"
-                    }
-                },
-                {
-                    "scope": "support.function",
-                    "settings": {
-                        "foreground": "#ffe5b2",
-                        // "foreground": "#ffe9a8",
-                        // "fontStyle": "bold"
-                    }
-                },
-                {
-                    "scope": "entity.name.function",
-                    "settings": {
-                        // function call
-                        // "foreground": "#ffe9a8",
-                        // "fontStyle": "bold"
-                    }
-                },
-                {
-                    "scope": "entity",
-                    "settings": {
-                        // class name
-                        // "fontStyle": "bold"
-                    }
-                },
-                {
-                    "scope": "storage.type",
-                    "settings": {
-                        // data type
-                        // "foreground": "#cf68e1",
-                        // "fontStyle": "bold"
-                    }
-                },
-                {
-                    "scope": "variable",
-                    "settings": {
-                        // "foreground": "#FF0000",
-                        // "fontStyle": "bold"
-                    }
-                },
-                {
-                    "scope": "meta.class",
-                    "settings": {
-                        // "foreground": "#bababa",
-                        // "fontStyle": "bold"
-                    }
-                }
-            ]
-        },
-    },
     // FILE
-    "files.enableTrash": false,
+    "files.enableTrash": true,
     // WINDOW
     "window.menuBarVisibility": "toggle",
-    "window.newWindowDimensions": "inherit",
-    "window.zoomLevel": 2,
+    "window.newWindowDimensions": "default",
+    "window.zoomLevel": 0,
     // WORKBENCH
     "workbench.activityBar.visible": false,
     "workbench.colorCustomizations": {
+        "statusBar.foreground": "#d2d2d2",
         "statusBar.background": "#2d2d2d",
-        "statusBar.noFolderBackground": "#2d2d2d",
-        "statusBar.debuggingBackground": "#2d2d2d"
     },
     "workbench.editor.tabSizing": "fit",
     "workbench.editor.showIcons": true,
@@ -211,17 +48,17 @@
     "workbench.settings.openDefaultSettings": false,
     "workbench.startupEditor": "newUntitledFile",
     "workbench.statusBar.feedback.visible": false,
+    "workbench.iconTheme": "eq-material-theme-icons-light",
+    "workbench.settings.editor": "json",
     // ADD-ON
-    // "C_Cpp.intelliSenseEngineFallback": "Enabled",
-    // "C_Cpp.errorSquiggles": "Enabled",
+    "liveServer.settings.donotShowInfoMsg": true,
     "bracketPairColorizer.showHorizontalScopeLine": false,
     "bracketPairColorizer.consecutivePairColors": [
         ["(", ")"],
         ["[", "]"],
         ["{", "}"],
         [
-            "#bababa", //gray
-            "#ff71a9", //pink
+            "#d4d4d4", //white
             "#9cdcfe", //sky
         ],
         "Red"
@@ -229,7 +66,6 @@
     "[cpp]": {
         "editor.quickSuggestions": true,
     },
-
     "C_Cpp.default.systemIncludePath": [
         "/usr/include/c++/7",
         "/usr/include/x86_64-linux-gnu/c++/7",
@@ -252,10 +88,7 @@
         "/usr/include",
         "${workspaceFolder}"
     ],
-    "csharp.suppressDotnetInstallWarning": true,
-    "java.errors.incompleteClasspath.severity": "ignore",
-    // "java.home": "C:\\Program Files (x86)\\Java\\jdk1.8.0_152\\bin\\java.exe",
-    // "java.home": "/usr/lib/jvm/java-8-openjdk-amd64",
+    // "java.errors.incompleteClasspath.severity": "ignore",
     "[javascript]": {
         "editor.tabSize": 2,
     },
@@ -265,41 +98,117 @@
     "[css]": {
         "editor.tabSize": 2,
     },
-    "[java]": {
-        "editor.tabSize": 4,
-    },
     "[xml]": {
         "editor.tabSize": 2,
     },
+    // PYTHON
     "python.pythonPath": "python3",
+    "python.formatting.autopep8Args": ["--max-line-length", "80", "--experimental"],
     // "python.linting.pylintArgs": [
     //     "--errors-only",
     // ],
-    // "python.formatting.provider": "autopep8",
     // TERMINAL
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cursorStyle": "block",
-    "terminal.integrated.fontFamily": "-consolas, meslo lg s for powerline",
+    "terminal.integrated.fontFamily": " menlo, -consolas, meslo lg s for powerline",
     "terminal.integrated.fontSize": 12,
     "terminal.integrated.lineHeight": 0,
     // FILE
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
-    // 
+    // GIT 
     "git.ignoreMissingGitWarning": true,
     "git.autofetch": true,
-    "workbench.iconTheme": "eq-material-theme-icons-light",
-    "extensions.ignoreRecommendations": false,
-    "materialTheme.autoApplyIcons": false,
-    "liveServer.settings.donotShowInfoMsg": true,
-    "liveServer.settings.donotVerifyTags": true,
-    "workbench.settings.editor": "json",
-    "vim.statusBarColorControl": true,
-    "vim.statusBarColors.normal": "#2d2d2d",
-    "vim.statusBarColors.insert": "#BF616A",
-    "vim.statusBarColors.visual": "#B48EAD",
-    "vim.statusBarColors.visualline": "#B48EAD",
-    "vim.statusBarColors.visualblock": "#A3BE8C",
-    "vim.statusBarColors.replace": "#D08770",
-    // "r.rterm.windows": "C:\\Program Files\\R\\R-3.4.3\\bin\\x64\\R.exe",
+    // VIM
+    "vim.useSystemClipboard": false,
+    "vim.statusBarColorControl": false,
+    // "vim.statusBarColors.normal": "#2d2d2d",
+    // "vim.statusBarColors.insert": "#BF616A",
+    // "vim.statusBarColors.visual": "#B48EAD",
+    // "vim.statusBarColors.visualline": "#B48EAD",
+    // "vim.statusBarColors.visualblock": "#A3BE8C",
+    // "vim.statusBarColors.replace": "#D08770",
+    "explorer.confirmDelete": false,
+    // ZEN MODE
+    "zenMode.hideStatusBar": false,
+    "zenMode.fullScreen": false,
+    "zenMode.hideTabs": false,
+    "zenMode.restore": true,
+    "editor.tokenColorCustomizations": {
+        "[Rouge]": {
+            "keywords": {
+                "fontStyle": ""
+            },
+            "comments": {
+                "fontStyle": ""
+            },
+            // "variables": "#a1a2a5" 
+        },
+        "[1mm - Dark+]": {
+            "functions": {
+                // "foreground": "#FF0000",
+                // "fontStyle": "bold"
+            },
+            "textMateRules": [
+                {
+                    "scope": "entity.name.function",
+                    "settings": {
+                        // "foreground": "#ffe9a6",
+                        // "fontStyle": "bold"
+                    }   
+                },
+                {
+                    "scope": "support.function",
+                    "settings": {
+                        "foreground": "#f785ab",
+                        // "foreground": "#ff71a9",
+                        // "fontStyle": "italic"
+                    }
+                },
+                {
+                    "scope": "keyword.operator",
+                    "settings": {
+                        // "foreground": "#f48fb1",
+                        "foreground": "#f785ab",
+                    }
+                },
+            ]
+        },
+        "[Default Dark+]": {
+            "keywords": "#569cd6",
+            "textMateRules": [
+                {
+                    "scope":"punctuation.separator",
+                    "settings": {
+                        "foreground": "#d4d4d4",
+                    }
+                },
+                {
+                    "scope":"entity.name.function",
+                    "settings": {
+                        "foreground": "#c586c0",
+                    }
+                },
+                // {
+                //     "scope": "meta.function-call",
+                //     "settings": {
+                //         "foreground": "#c586c0",
+                //     }
+                // },
+                {
+                    "scope":"keyword.operator",
+                    "settings": {
+                        "foreground": "#f785ab",
+                    }
+                },
+                {
+                    "scope": "support.function",
+                    "settings": {
+                        "foreground": "#f785ab",
+                    }
+                },
+            ]
+        },
+    },
+    "colorize.ignore_search_variables_info": true,
 }
