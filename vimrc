@@ -50,7 +50,7 @@ Plug 'lilydjwg/colorizer'
 " Autoclose
 Plug 'Townk/vim-autoclose'
 
-" PLUGINS FROM VIM-SCRIPTS:
+" PLUGINS FROM VIM_SCRIPTS:
 " Search results counter
 Plug 'vim-scripts/IndexedSearch'
 " XML/HTML tags navication
@@ -61,7 +61,7 @@ Plug 'vim-scripts/YankRing.vim'
 " Finish declaring plugins-------------
 call plug#end()
 
-" VIM SETTINGS-------------------------
+" VIM SETTINGS:
 " Font encode
 set enc=utf-8
 " Enable number column
@@ -136,10 +136,10 @@ if !isdirectory(&directory)
 	call mkdir(&directory, "p")
 endif	
 
-" VSCODE THEME-------------------------
-" let g:codedark_conservative = 1
+" VSCODE THEME:
+let g:codedark_conservative = 1
 
-" CTRLP--------------------------------
+" CTRLP:
 " file finder mapping
 let g:ctrlp_map = ',e'
 " tags in current file finder mapping
@@ -165,7 +165,7 @@ let g:ctrlp_custom_ignore = {
 	\ 'file': '\.pyc$\|\.pyo$',
 	\ }
 
-" JEDI-PYTHON AUTO COMPLETION----------
+" JEDI_PYTHON AUTO COMPLETION:
 " go to definition
 let g:jedi#goto_command = ',d'
 " find ocurrences
@@ -175,25 +175,46 @@ let g:jedi#goto_assignments_command = ',a'
 " goto definition in new tab
 nmap ,D :tab split<CR>:call jedi#goto()<CR>
 
-" NEOCOMPLCACHE-PYTHON AUTOCOMPLETION--
-" NOTE:Dont sure how they work
+" NEOCOMPLCACHE_PYTHON AUTOCOMPLETION:
+" disable autoComplPop
+let g:acp_enableAtStartup = 0
+" use neocomplcache
 let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_enable_ignore_case = 1 
+" use smartcase
 let g:neocomplcache_enable_smart_case = 1
+" autoComplPop-like behavior
 let g:neocomplcache_enable_auto_select = 1
-let g:neocomplcache_enable_fuzzy_completion = 1
+" shell-like behavior
+"set completeopt+=longest
+"let g:neocomplcache_enable_auto_select = 1
+"let g:neocomplcache_disable_auto_complete = 1
+"inoremap <expr><TAB> pumvisible() ? "\<Down>" : "\<C-x>\<C-u>"
+" completion
+"let g:neocomplcache_enable_fuzzy_completion = 1
 let g:neocomplcache_enable_camel_case_completion = 1
 let g:neocomplcache_enable_underbar_completion = 1
-let g:neocomplcache_fuzzy_completion_start_length = 1
+"let g:neocomplcache_fuzzy_completion_start_length = 1
 let g:neocomplcache_auto_completion_start_length = 1
 let g:neocomplcache_manual_completion_start_length = 1
+" set syntax length
 let g:neocomplcache_min_keyword_length = 1
 let g:neocomplcache_min_syntax_length = 1
 " complete with workds from any opened file
 let g:neocomplcache_same_filetype_lists = {}
 let g:neocomplcache_same_filetype_lists._ = '_'  
+" TAB completion
+inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<S-TAB>"
+" close popup and delete backward char.
+inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
+inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
+inoremap <expr><C-y> neocomplcache#smart_close_popup()
+inoremap <expr><C-e> neocomplcache#smart_close_popup()
+" close popup by <Space>
+inoremap <expr><Space> pumvisible() ? neocomplcache#close_popup() : "\<Space>"
 
-" DRAG VISUALS-------------------------
+" DRAG VISUALS:
 " move block in 4 directions
 vmap <expr> <S-M-LEFT> DVB_Drag('left')
 vmap <expr> <S-M-RIGHT> DVB_Drag('right')
@@ -202,7 +223,7 @@ vmap <expr> <S-M-UP> DVB_Drag('up')
 " mapping to duplicate block
 vmap <expr> D DVB_Duplicate()
 
-" SYNTASTIC-LANGUAGE CODE CHECKER------
+" SYNTASTIC_LANGUAGE CODE CHECKER:
 " show errors and warnings on current file
 nmap <leader>e :Errors<CR>
 " check when just opened the file
@@ -210,11 +231,11 @@ let g:syntastic_check_on_open = 1
 " dont put icons on the sign column
 let g:syntastic_enable_signs = 0
 
-" AIRLINE------------------------------
+" AIRLINE:
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'codedark'
 let g:airline#extensions#whitespace#enabled = 0
 
-" AUTOCLOSE----------------------------
+" AUTOCLOSE:
 " Let ESC work as expected with this
 let g:AutoClosePumvisible = {"ENTER": "\<C-Y>", "ESC": "\<ESC>"}
