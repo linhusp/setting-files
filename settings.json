@@ -5,23 +5,27 @@
     "editor.minimap.maxColumn": 80,
     "window.titleBarStyle": "native",
     // EDITOR
+    "editor.autoIndent": true,
     "editor.cursorBlinking": "blink",
     "editor.cursorStyle": "line",
     // "editor.detectIndentation": false,
     "editor.insertSpaces": true,
-    "editor.fontFamily": "iosevka ss04, consolas, -monaco, -menlo, meslo lg m",
-    // "editor.fontLigatures": true,
-    "editor.fontSize": 16,
+    "editor.fontFamily": "-roboto mono, -sf mono, -iosevka, iosevka ss04, -consolas, -monaco, menlo, meslo lg m",
+    "editor.fontSize": 16.5,
     "editor.fontWeight": "500",
-    // "editor.glyphMargin": false,
-    "editor.letterSpacing": 0.4,
-    "editor.lineHeight": 22,
-    // "editor.lineNumbers": "relative",
+    "editor.glyphMargin": false,
+    "editor.letterSpacing": 0.3,
+    "editor.lineHeight": 23,
+    "editor.lineNumbers": "relative",
     "editor.quickSuggestions": {
+        "other": true,
         "comments": false,
+        "strings": false
     },
-    "editor.renderLineHighlight": "gutter",
-    "editor.rulers": [80],
+    "editor.tabCompletion": "on",
+    // "editor.parameterHints.enabled": false,
+    "editor.parameterHints.cycle": false,
+    // "editor.rulers": [80],
     // "editor.smoothScrolling": true,
     "editor.wordWrap": "bounded",
     // "editor.wordWrapColumn": 80,
@@ -30,12 +34,11 @@
     "files.enableTrash": true,
     // WINDOW
     "window.menuBarVisibility": "toggle",
-    "window.newWindowDimensions": "default",
     // WORKBENCH
     "workbench.activityBar.visible": false,
     "workbench.colorCustomizations": {
         "statusBar.foreground": "#d2d2d2",
-        "statusBar.background": "#2d2d2d",
+        "statusBar.background": "#2d2d2d"
     },
     "workbench.editor.tabSizing": "fit",
     "workbench.editor.showIcons": true,
@@ -45,21 +48,21 @@
     "workbench.statusBar.feedback.visible": false,
     "workbench.settings.editor": "json",
     // ADD-ON
-    // "liveServer.settings.donotShowInfoMsg": true,
-    "bracketPairColorizer.showHorizontalScopeLine": false,
-    "bracketPairColorizer.consecutivePairColors": [
-        ["(", ")"],
-        ["[", "]"],
-        ["{", "}"],
-        [
-            "#d4d4d4", //white
-            "#9cdcfe", //sky
-        ],
-        "Red"
+    // colorize
+    "colorize.files_extensions": [
+        ".json",
+        ".html",
+        ".js",
+        ".css"
     ],
-    "[cpp]": {
-        "editor.quickSuggestions": true,
-    },
+    "bracket-pair-colorizer-2.colors": [
+        "#d4d4d4",
+        "#46c9b0",
+        "#99d4e1"
+    ],
+    "bracket-pair-colorizer-2.colorMode": "Independent",
+    "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
+    "bracket-pair-colorizer-2.showVerticalScopeLine": true,
     "C_Cpp.default.systemIncludePath": [
         "/usr/include/c++/7",
         "/usr/include/x86_64-linux-gnu/c++/7",
@@ -82,31 +85,24 @@
         "/usr/include",
         "${workspaceFolder}"
     ],
-    // "java.errors.incompleteClasspath.severity": "ignore",
-    // "[javascript]": {
-    //     "editor.tabSize": 2,
-    // },
-    // "[html]": {
-    //     "editor.tabSize": 2,
-    // },
-    // "[css]": {
-    //     "editor.tabSize": 2,
-    // },
-    // "[xml]": {
-    //     "editor.tabSize": 2,
-    // },
+    "[html]": {
+        "editor.wordWrapColumn": 120
+    },
     // PYTHON
     "python.pythonPath": "python3",
-    "python.formatting.autopep8Args": ["--max-line-length", "80", "--experimental"],
+    // "python.formatting.autopep8Args": [
+    //     // "--in-place", "--max-line-length", "79", "--experimental",
+    //     "--in-place", "--aggressive", "--aggressive"
+    // ],
     "python.linting.pylintArgs": [
-        "--errors-only",
+        "--errors-only"
     ],
     // TERMINAL
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cursorStyle": "block",
     "terminal.integrated.fontFamily": " iosevka ss04, -menlo, -consolas, -meslo lg s for powerline",
     "terminal.integrated.fontSize": 13,
-    // "terminal.integrated.fontWeight": "500",
+    "terminal.integrated.fontWeight": "500",
     "terminal.integrated.lineHeight": 0,
     // FILE
     "files.insertFinalNewline": true,
@@ -115,83 +111,29 @@
     "git.ignoreMissingGitWarning": true,
     "git.autofetch": true,
     // VIM
-    "vim.useSystemClipboard": false,
+    "vim.autoindent": true,
+    "vim.useSystemClipboard": true,
     "vim.statusBarColorControl": false,
-    // ZEN MODE
-    "zenMode.hideStatusBar": false,
-    "zenMode.fullScreen": false,
-    "zenMode.hideTabs": false,
-    "zenMode.restore": true,
-    "editor.tokenColorCustomizations": {
-        "[1mm - Dark+]": {
-            "textMateRules": [
-                {
-                    "scope": "variable.parameter",
-                    "settings": {
-                        "fontStyle": ""
-                    }
-                },
-                {
-                    "scope": "variable.other",
-                    "settings": {
-                        // "foreground": "#d3d3d3",
-                    }
-                },
-                {
-                    "scope": "support.function",
-                    "settings": {
-                        "foreground": "#e2c5ab"
-                    }
-                }
-            ]   
-        },
-        "[Default Dark+]": {
-            "textMateRules": [
-                {
-                    // OBJ.accessxxx()
-                    // variable.parameter: typexxx var
-                    "scope": "variable.other",
-                    "settings": {
-                        "foreground": "#d3d3d3",
-                    }
-                },
-                {
-                    "scope":"entity.name.function",
-                    "settings": {
-                        "foreground": "#569cD6",
-                    }
-                },
-                {
-                    "scope":"keyword.operator.assignment",
-                    "settings": {
-                        "foreground": "#d4d4d4",
-                    }
-                },
-                {
-                    "scope": "keyword.operator",
-                    "settings": {
-                        "foreground": "#e2c5ab",
-                        "fontStyle": ""
-                    }
-                },
-                {
-                    "scope": "support.function",
-                    "settings": {
-                        // "foreground": "#f785ab",
-                        "foreground": "#e2c5ab"
-                    }
-                },
-            ]
-        },
-    },
-    "colorize.ignore_search_variables_info": true,
-    // "editor.minimap.renderCharacters": false,
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.color": "rgba(250, 240, 170, 0.5)",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<ESC>"]
+        }
+    ],
+    // OTHER
     "editor.minimap.showSlider": "always",
     "java.configuration.checkProjectSettingsExclusions": false,
     "java.errors.incompleteClasspath.severity": "ignore",
-    // "editor.suggestSelection": "first",
     // "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "editor.codeLens": false,
-    "workbench.iconTheme": "material-icon-theme",
-    // "python.jediEnabled": false,
+    // "workbench.iconTheme": "material-icon-theme",
+    "window.zoomLevel": 0,
+    "editor.renderLineHighlight": "all",
+    "breadcrumbs.enabled": false,
+    "colorize.ignore_files_extensions_deprecation": true,
+    "editor.suggestSelection": "recentlyUsedByPrefix",
+    "workbench.colorTheme": "Ghost Shell",
+    "update.mode": "none"
 }
